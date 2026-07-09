@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aliyev Website</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+}
+
+header{
+padding:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+button{
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="logo">ALIYEV</div>
+
+<nav>
+<a href="#">Главная</a>
+<a href="#">Обо мне</a>
+<a href="#">Галерея</a>
+<a href="#">Контакты</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<h1>Добро пожаловать!</h1>
+
+<p>Это мой собственный сайт.</p>
+
+<button onclick="hello()">Нажми</button>
+
+</section>
+
+<footer>
+© 2026 Aliyev Website
+</footer>
+
+<script>
+function hello(){
+alert("Спасибо за посещение моего сайта!");
+}
+</script>
+
+</body>
+</html>
